@@ -3,6 +3,13 @@
 // ==============================
 
 .header {
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1), 0 1px rgba(0,0,0,0.1);
+  background: #fafafa;
+  margin-bottom: 10px;
+  border-top: 3px solid #009a61;
+}
+
+.header_container {
   @include clearfix; 
 
   @import '_header/logo';
@@ -11,7 +18,7 @@
 
 
 @include max-screen() {
-  .header {
+  .header_container {
     padding: 50px 0 0;
     text-align: center;
   }

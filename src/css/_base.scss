@@ -97,9 +97,13 @@ a {
 }
 
 .bg-llight {
-  background-color: #f2f2f5;
+  background-color: #fff;
 }
 
 .bg-white {
   background-color: #FFF;
+}
+
+.main {
+  min-height: calc(100vh - 185px);
 }

@@ -6,11 +6,11 @@ function initToc() {
   const $toc = $('#post-toc');
   if ($toc.length && $(window).width() >= 1080) {
     $(window).scroll(function () {
-      if ($(window).scrollTop() > 100) {
-        $toc.fadeIn(1000);
-      } else {
-        $toc.fadeOut(100);
-      }
+      // if ($(window).scrollTop() > 100) {
+      //   $toc.fadeIn(1000);
+      // } else {
+      //   $toc.fadeOut(100);
+      // }
     });
   }
 }

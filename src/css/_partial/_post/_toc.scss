@@ -1,23 +1,28 @@
 .post-toc {
+  width: 300px;
 
+  a {
+    padding: 3px 0;
+  }
+  
   .post-toc-title {
     font-size: 1em;
     max-width: 9em;
     border: 0;
     font-weight: normal;
-    padding: 0.05em 0.5em;
+    padding: 0.05em 0.5em 0.05em 1.5em;
     line-height: 1em;
   }
 
   .post-toc-content {
     display: block;
     padding: 0.5em 2em 0.5em 0.5em;
-    margin-top: -1.5em;
+    border-top: 1px solid rgba(178, 186, 194, 0.15);
     line-height: 1.3em;
 
     /* Hugo Table of Contents have extra dot in front */
     ul {
-      padding-left: 20px;
+      padding-left: 1.1em;
       list-style-type: none;
 
       ul {
@@ -28,11 +33,8 @@
         }
 
         li > a {
-          color: #139;
-        }
-
-        li > a:hover{
-          color: #900;
+          color: #000;
+          display: block;
         }
       }
     }
@@ -42,23 +44,23 @@
 
 @include min-screen() {
   .post-toc {
-    display: none;
-    border: 1px solid #CCC;
+    display: block;
+    border-left: 1px solid #eee;
     background: white;
-    box-shadow: 0 0 1em #777777;
     position: fixed;
-    top: 0;
-    right: 0;
+    right: calc(50vw - 780px);
     max-height: 80%;
     overflow: auto;
     z-index: 99;
 
+    
+
     .post-toc-content {
-      display: none;
+      display: block;
     }
 
-    &:hover .post-toc-content {
-      display: block;
+    a:hover{
+      text-decoration: underline;
     }
   }
 }
@@ -66,7 +68,6 @@
 @include max-screen() {
   .post-toc {
     padding: 10px;
-    border-bottom: 2px LightGrey solid;
     word-wrap: break-word;
   }
 }
