@@ -1,6 +1,6 @@
 <!-- js -->
 {{ if .Site.Params.bootcdn -}}
-  <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js" crossorigin="anonymous"></script>
 {{- else if .Site.Params.publicCDN.enable -}}
   {{ .Site.Params.publicCDN.jquery | safeHTML }}
