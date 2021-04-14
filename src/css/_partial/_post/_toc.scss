@@ -16,24 +16,26 @@
 
   .post-toc-content {
     display: block;
-    padding: 0.5em 2em 0.5em 0.5em;
+    padding: 0.8em 2em 0.5em 0.5em;
     border-top: 1px solid rgba(178, 186, 194, 0.15);
     line-height: 1.3em;
 
     /* Hugo Table of Contents have extra dot in front */
     ul {
-      padding-left: 1.1em;
+      padding-left: 0.8em;
       list-style-type: none;
 
       ul {
-        list-style: disc;
+        list-style-type: none;
 
         ul {
-          list-style: circle;
+          list-style-type: none;
         }
 
         li > a {
-          color: #000;
+          color: #6c6e70;
+          border-bottom-color: #868e96;
+          border-bottom: 1px dashed #ccc;
           display: block;
         }
       }
